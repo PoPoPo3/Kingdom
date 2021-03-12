@@ -12,9 +12,20 @@ let path = {
 
     src: {
         html: source_folder + "/",
-        css: source_folder + "/scss/",
-        js: source_folder + "/js/",
-        img: source_folder + "/img/",
-        fonts: source_folder + "/fonts/",
-    }
+        css: source_folder + "/scss/style.scss",
+        js: source_folder + "/js/script.js",
+        img: source_folder + "/img/**/*.{jpg,png,gif,svg,ico,webp}",
+        fonts: source_folder + "/fonts/*.ttf",
+    },
+
+    watch: {
+        html: source_folder + "/**/*.html",
+        css: source_folder + "/scss/**/*.scss",
+        js: source_folder + "/js/**/*.js",
+        img: source_folder + "/img/**/*.{jpg,png,gif,svg,ico,webp}"
+    },
+    clean: "./" + project_folder + "/"
 }
+
+let { src, dest } = require('gulp'),
+    gulp = require('gulp'),
