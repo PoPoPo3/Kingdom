@@ -1,0 +1,14 @@
+{
+  "name": "gulp-sass",
+  "version": "1.0.0",
+  "description": "gulp-tr",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PoPo3",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
